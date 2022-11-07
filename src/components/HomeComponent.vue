@@ -7,19 +7,19 @@ export default {
       carteras: [{
         color: '#bf360c',
         precio: 12,
-        nombre: 'Cartera Marrón',
+        nombre: 'Juego Marrón',
         imagen: './../../public/assets/carteras/pc1.jpg'
       },
       {
         color: '#9c0000',
         precio: 12,
-        nombre: 'Cartera Roja',
+        nombre: 'Juego Rojo',
         imagen: './../../public/assets/carteras/pc2.jpg',
       },
       {
         color: '#000000',
         precio: 12,
-        nombre: 'Cartera Negra',
+        nombre: 'Juego Negro',
         imagen: './../../public/assets/carteras/pc3.jpg'
       }],
       bikinis: [{
@@ -43,12 +43,12 @@ export default {
         talla: 'U: Única',
         imagen: './../../public/assets/bikini/pb3.jpg'
       }],
-      bandoleros: [{
+      bandoleros: [/*{
         color: '#bf360c',
         precio: 5,
         nombre: 'Estampados',
         imagen: './../../public/assets/bandoleros/prospect1.jpg'
-      },
+      },*/
       {
         color: '#9c0000',
         precio: 5,
@@ -60,6 +60,24 @@ export default {
         precio: 5,
         nombre: 'Casuales',
         imagen: './../../public/assets/bandoleros/prospect3.jpg'
+      },
+      {
+        color: '#bf360c',
+        precio: 5,
+        nombre: 'Estampado Blanco',
+        imagen: './../../public/assets/bandoleros/prospect4.jpg'
+      },
+      {
+        color: '#9c0000',
+        precio: 5,
+        nombre: 'Casual Negro',
+        imagen: './../../public/assets/bandoleros/prospect5.jpg'
+      },
+      {
+        color: '#000000',
+        precio: 5,
+        nombre: 'Vestido',
+        imagen: './../../public/assets/bandoleros/prospect6.jpg'
       }],
     }
   },
@@ -95,7 +113,7 @@ export default {
       </div>
     </div>
     <div class="bikini" id="bikini">
-      <h1>BIKINI</h1>
+      <h1>ROPA ÍNTIMA</h1>
       <div v-for="bikini in bikinis">
         <div class="card">
           <div class="card-header">
