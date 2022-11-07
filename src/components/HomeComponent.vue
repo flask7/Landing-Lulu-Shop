@@ -106,7 +106,7 @@ export default {
           <div class="card-footer">
             <div class="field-card-bottom">
               <button @click="comprar(cartera)">COMPRAR</button>
-              <p>{{ cartera.precio }}<b>$</b></p>
+              <b><p class="price-paragraph">{{ cartera.precio }}$</p></b>
             </div>
           </div>
         </div>
@@ -124,8 +124,8 @@ export default {
           </div>
           <div class="card-footer">
             <div class="field-card-bottom">
-              <button @click="comprar(bikini)">COMPRAR</button>
-              <p>{{ bikini.precio }}<b>$</b></p>
+              <button @click="comprar(bikini)">COMPRAR</button>              
+              <b><p class="price-paragraph">{{ bikini.precio }}$</p></b>
             </div>
           </div>
         </div>
@@ -143,8 +143,8 @@ export default {
           </div>
           <div class="card-footer">
             <div class="field-card-bottom">
-              <button @click="comprar(bandolero)">COMPRAR</button>
-              <p>{{ bandolero.precio }}<b>$</b></p>
+              <button @click="comprar(bandolero)">COMPRAR</button>              
+              <b><p class="price-paragraph">{{ bandolero.precio }}$</p></b>
             </div>
           </div>
         </div>

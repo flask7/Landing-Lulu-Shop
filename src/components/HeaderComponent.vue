@@ -12,7 +12,7 @@ export default {
     <header>
         <ul>
             <li>
-                <img src="./../../public/assets/data/logo.png" alt="Logo Lulu Shop" />
+                <img src="./../../public/assets/data/logo.png" title="Logo Lulu Shop" alt="Logo Lulu Shop" />
             </li>
             <li>
               <a href="#carteras">

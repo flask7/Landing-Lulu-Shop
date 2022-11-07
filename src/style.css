@@ -1,6 +1,8 @@
 body, html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 #app {
@@ -18,9 +20,20 @@ body, html {
   src: url('../public/assets/fonts/BeautyQueen.otf');
 }
 
-header > ul {
+header > ul, header, .field-card-bottom {
   display: flex;
+}
+
+header > ul {
+  width: 100%;
+}
+
+header > ul, header {
   justify-content: space-around;
+  padding: 0;
+}
+
+header, header > ul, .field-card-bottom {
   align-items: center;
 }
 
@@ -36,6 +49,7 @@ li > img {
 a {
   text-decoration: none;
   color: #313131;
+  font-weight: bolder;
   border-bottom: 3.5px solid transparent;
 }
 
@@ -43,24 +57,29 @@ a:hover {
   border-bottom: 2px solid #651fff;
 }
 
-.field-card-bottom {
-  display: flex;
+.field-card-bottom {  
   flex-direction: row;
   margin: auto;
   width: 100%;
   justify-content: space-around;
 }
 
-.field-card-bottom > button {
-  border-radius: 0 15px;
-  background: none;
-  border: 2px solid #651fff;
+.field-card-bottom > button {  
+  background: #dcdcdc;
+  border: none;
+  color: #313131;
+  font-weight: bolder;
+  height: 2rem;
 }
 
 .field-card-bottom > button:hover {
-  border: 2px solid lightgray;
   font-weight: bolder;
-  color: #651fff;
+  background: #661fff6a;
+  color: #1f0754db;
+}
+
+.price-paragraph {
+  color: #bd2f2f;
 }
 
 h1 {
@@ -88,15 +107,15 @@ h1 {
   max-width: 10rem;
   min-width: 10rem;
   height: 10rem;
-  /*border-radius: 50%;*/
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   margin: auto;
 }
 
 .card-header {
   font-weight: bolder;
+  color: #272727;
 }
 
 .card-body, .container, .container > div, .card {
